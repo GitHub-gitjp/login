@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- 这些标签都是有固定顺序的 -->
+	<!-- 引入外部配置文件，下面的${jdbc.dataSource}这些就是获取外部配置文件的值， 这样做的好处就是不用每次来修改mybatis的配置文件，只要在外部得properties文件中配置即可； -->
+
+	<!-- 和spring整合后 environments配置将废除 -->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/loginpro" />
+				<property name="username" value="root" />
+				<property name="password" value="root" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!-- 加载sqlmap文件 -->
+	<mappers>
+		<!-- 注册Mapper映射接口 -->
+		<mapper class="cn.itcast.mapper.UserMapper" />
+	</mappers>
+</configuration>
