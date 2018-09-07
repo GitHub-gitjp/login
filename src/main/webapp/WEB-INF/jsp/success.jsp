@@ -12,7 +12,7 @@
     <div>
         <strong> welcome,${sessionScope.user.username}! </strong>
     </div>
-    this is success page!
+    登录成功！
 
     <a href="${pageContext.request.contextPath}/user/quit">点我跳到另一个页面</a>
 
