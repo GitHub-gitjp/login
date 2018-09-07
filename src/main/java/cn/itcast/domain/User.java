@@ -1,6 +1,7 @@
 package cn.itcast.domain;
 
 public class User {
+	private int uid;
 	private String uname;
 	private int uage;
 	private String uaccount;
@@ -16,6 +17,14 @@ public class User {
 		return "User [uname=" + uname + ", uage=" + uage + ", uaccount=" + uaccount + ", upassword=" + upassword
 				+ ", to_work=" + to_work + ", off_work=" + off_work + ", is_out=" + is_out + ", is_leave=" + is_leave
 				+ ", is_anager=" + is_anager + "]";
+	}
+
+	public int getUid() {
+		return uid;
+	}
+
+	public void setUid(int uid) {
+		this.uid = uid;
 	}
 
 	public String getUname() {

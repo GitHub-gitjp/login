@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 //这个注解相当于@Controller + @ResponseBody，相当于整个类中所有方法的返回值都为json字符串
 @RestController
 @RequestMapping("/test")
-public class LoginController {
+public class TestController {
 
 	@RequestMapping(value = "helloWorld")
 	@ResponseBody

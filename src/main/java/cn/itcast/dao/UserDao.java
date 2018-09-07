@@ -4,13 +4,18 @@ import org.apache.ibatis.annotations.Param;
 
 import cn.itcast.domain.User;
 
+
 public interface UserDao {
-
-	// 添加用户
-	public void addUser(User user);
-
-	// 根据用户名和密码查询用户
-	// 注解的两个参数会自动封装成map集合，括号内即为键
-	public void findLog(@Param("name") String name, @Param("password") String password);
-
+    
+    
+    /**
+     * 查找用户名和密码
+     * @param username 登录用户名 
+     * @return
+     */
+    User findByUsername(String username);
+    /**
+     * 注册用户和密码
+     */
+    void registerUser(@Param("username")String username, @Param("password")String password);
 }
