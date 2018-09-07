@@ -10,14 +10,6 @@
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<filter>
-		<filter-name>adminOperateLogFilter</filter-name>
-		<filter-class>com.berheley.exam.web.filter.AdminOperateLogFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>adminOperateLogFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
 
 
 	<context-param>

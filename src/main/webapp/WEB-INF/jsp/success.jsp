@@ -14,7 +14,7 @@
     </div>
     this is success page!
 
-    <a href="${pageContext.request.contextPath}/user/anotherpage">点我跳到另一个页面</a>
+    <a href="${pageContext.request.contextPath}/user/quit">点我跳到另一个页面</a>
 
     <form action="${pageContext.request.contextPath}/user/login">
         <table>
