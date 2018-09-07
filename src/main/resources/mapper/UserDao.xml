@@ -14,7 +14,8 @@
 	<!--增加用户名和密码进行注册 -->
 	<insert id="registerUser">
 		insert into user (uname,upassword)
-		values (#{uname},#{upassword})
+		values
+		(#{uname},#{upassword})
 	</insert>
 
 </mapper>
